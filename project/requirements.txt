@@ -1,2 +1,6 @@
 falcon==1.4.1
 gunicorn==19.7.1
+celery==4.1.1
+falcon==1.4.1
+gunicorn==19.7.1
+redis==2.10.6
