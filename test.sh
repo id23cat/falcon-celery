@@ -13,5 +13,5 @@ check=`curl http://localhost:8000/status/${test} -s | jq -r '.status'`
 while [ "$check" != "SUCCESS" ]
 do
   check=`curl http://localhost:8000/status/${test} -s | jq -r '.status'`
-  echo $(curl http://localhost:8000/status/${test} -s)
+  echo "$(curl http://localhost:8000/status/${test} -s) OK"
 done
